@@ -11,14 +11,14 @@ export async function obtenerPublicaciones() {
 }
 
 export async function crearPublicacion(titulo, contenido) {
-  const { data, error } = await supabase
+  const { error } = await supabase
     .from('publicaciones')
-    .insert({ titulo, contenido })
-    .select()
-    .single();
+    .insert({ titulo, contenido });
 
-  if (error) throw new Error(error.message);
-  return data;
+  if (error) {
+    console.log('error al crear:', error);
+    alert(error.message);
+  }
 }
 
 export async function actualizarPublicacion(id, titulo, contenido) {
