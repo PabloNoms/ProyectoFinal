@@ -1,0 +1,128 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.encabezado {
+  background-color: #232455;
+  border: 1px solid #3d3f8a;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+}
+
+.encabezado h1 {
+  margin: 0;
+  color: #e8e9ef;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #1d1e26;
+  border: 1px solid #343747;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo label {
+  font-size: 13px;
+  color: #9a9db0;
+}
+
+.botonesForm {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.botonSecundario {
+  background-color: transparent;
+  border: 1px solid #343747;
+  color: #9a9db0;
+}
+
+.botonSecundario:hover {
+  background-color: #262833;
+  color: #e8e9ef;
+}
+
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item {
+  background-color: #1d1e26;
+  border: 1px solid #343747;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.item:hover {
+  border-color: #4c5cf5;
+}
+
+.item p {
+  color: #9a9db0;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.fecha {
+  color: #9a9db0;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.botonesItem {
+  display: flex;
+  gap: 8px;
+}
+
+.botonEditar {
+  background-color: transparent;
+  border: 1px solid #4c5cf5;
+  color: #9ca4ff;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.botonEditar:hover {
+  background-color: rgba(76, 92, 245, 0.12);
+}
+
+.botonPeligro {
+  background-color: transparent;
+  border: 1px solid #e2454a;
+  color: #ff8a8d;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.botonPeligro:hover {
+  background-color: rgba(226, 69, 74, 0.12);
+}
+
+.vacio {
+  text-align: center;
+  padding: 32px 0;
+  color: #9a9db0;
+}

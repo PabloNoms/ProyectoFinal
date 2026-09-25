@@ -1,0 +1,83 @@
+:root {
+  --color-fondo: #12131a;
+  --color-superficie: #1d1e26;
+  --color-superficie-alta: #262833;
+  --color-borde: #343747;
+  --color-texto: #e8e9ef;
+  --color-texto-suave: #9a9db0;
+  --color-primario: #4c5cf5;
+  --color-primario-hover: #6572ff;
+  --color-peligro: #e2454a;
+  --color-peligro-hover: #ef5a5f;
+  --color-exito: #2fbf71;
+
+  --espacio-xs: 4px;
+  --espacio-sm: 8px;
+  --espacio-md: 16px;
+  --espacio-lg: 24px;
+  --espacio-xl: 32px;
+
+  --radio: 12px;
+  --radio-chico: 8px;
+  --transicion: 160ms ease;
+
+
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: var(--espacio-xl) var(--espacio-md);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  display: flex;
+  justify-content: center;
+}
+
+#root { width: 100%; max-width: 680px; }
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 var(--espacio-lg);
+}
+
+h3 {
+  margin: 0 0 var(--espacio-xs);
+  font-size: 18px;
+}
+
+button {
+  font: inherit;
+  padding: var(--espacio-sm) var(--espacio-md);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-chico);
+  background-color: var(--color-primario);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color var(--transicion), transform var(--transicion), opacity var(--transicion);
+}
+button:hover:not(:disabled) { background-color: var(--color-primario-hover); }
+button:active:not(:disabled) { transform: translateY(1px); }
+button:disabled { opacity: 0.55; cursor: not-allowed; }
+
+input, textarea {
+  font: inherit;
+  width: 100%;
+  padding: 10px var(--espacio-sm);
+  border-radius: var(--radio-chico);
+  border: 1px solid var(--color-borde);
+  background-color: var(--color-superficie-alta);
+  color: var(--color-texto);
+  transition: border-color var(--transicion), box-shadow var(--transicion);
+}
+input::placeholder, textarea::placeholder { color: var(--color-texto-suave); }
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--color-primario);
+  box-shadow: 0 0 0 3px rgba(76, 92, 245, 0.25);
+}
