@@ -1,5 +1,5 @@
 ###  obtener
-Nosotros cuandddo entramos a la pagina web , si hay algo cargado de publicaciones lo que hace la primera funcion es buscar todo lo que hay guardado y lo muestra en pantalla. Siempre pone arriba lo ultimo que se publico.
+Nosotros cuando entramos a la pagina web , si hay algo cargado de publicaciones lo que hace la primera funcion es buscar todo lo que hay guardado y lo muestra en pantalla. Siempre pone arriba lo ultimo que se publico.
 ### Crear
 Cuando el Usuario carghue algo en el formulario y apreta el boton de publicar, esta funcion lo que hace es tomar todo lo que escribiste y lo guarda como un registro nuevo en la BD
 ###  Actualizar
